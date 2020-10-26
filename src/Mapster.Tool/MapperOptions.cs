@@ -8,10 +8,10 @@ namespace Mapster.Tool
     public class MapperOptions
     {
         [Option('a', "assembly", Required = true, HelpText = "Assembly to scan")]
-        public string Assembly { get; set; }
+        public string Assembly { get; set; } = string.Empty;
 
         [Option('o', "output", Required = false, Default = "Mappers", HelpText = "Output directory.")]
-        public string Output { get; set; }
+        public string Output { get; set; } = string.Empty;
 
         [Option('n', "namespace", Required = false, HelpText = "Namespace for mappers")]
         public string? Namespace { get; set; }
